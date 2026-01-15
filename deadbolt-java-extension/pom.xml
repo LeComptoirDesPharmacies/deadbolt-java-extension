@@ -3,12 +3,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.lcdp</groupId>
+    <groupId>fr.lecomptoirdespharmacies</groupId>
     <artifactId>deadbolt-java-extension</artifactId>
-    <version>2.1.0</version>
+    <version>0</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>Extension for deadbolt</description>
+    <url>https://github.com/LeComptoirDesPharmacies/lcdp-deadbolt-extension-java</url>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>RBULTET Antoine</name>
+            <email>antoine@lecomptoirdespharmacies.fr</email>
+            <organization>Le Comptoir Des Pharmacies</organization>
+            <organizationUrl>https://www.lecomptoirdespharmacies.fr/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/LeComptoirDesPharmacies/lcdp-deadbolt-extension-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com:LeComptoirDesPharmacies/lcdp-deadbolt-extension-java.git</developerConnection>
+        <url>https://github.com/LeComptoirDesPharmacies/lcdp-deadbolt-extension-java/tree/main</url>
+    </scm>
 
     <properties>
         <scala.version>2.13.1</scala.version>
@@ -70,15 +95,15 @@
     </repositories>
 
     <distributionManagement>
-        <repository>
-            <id>lcdp-prod-fury</id>
-            <name>Prod Fury</name>
-            <url>https://maven.fury.io/lcdp/</url>
-        </repository>
         <snapshotRepository>
-            <id>lcdp-dev-fury</id>
-            <name>Dev Fury</name>
-            <url>https://maven.fury.io/lcdp-dev/</url>
+            <id>ossrh-snapshot</id>
+            <name>Central Repository OSSRH Snapshots</name>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <name>Central Repository OSSRH Releases</name>
+            <url>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 </project>
