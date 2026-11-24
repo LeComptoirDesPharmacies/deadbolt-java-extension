@@ -3,17 +3,17 @@
 lockfile_version = 3
 
 [[tools.java]]
-version = "temurin-11.0.33+10"
+version = "temurin-11.0.33.1+1"
 backend = "core:java"
 specifiers = ["temurin-11"]
 
 [tools.java."platforms.linux-x64"]
-checksum = "sha256:c4b8eaf56c93b95b689ffc08d155df1bcdbbffb666f8f71d21d97aedaea6f0ec"
-url = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jdk_x64_linux_hotspot_11.0.33_10.tar.gz"
+checksum = "sha256:3119b6dd17543e8e61fd0186f9325414bf2601270bf1edf8a314b9a51c5fb89d"
+url = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jdk_x64_linux_hotspot_11.0.33.1_1.tar.gz"
 
 [tools.java."platforms.macos-arm64"]
-checksum = "sha256:6ef5b027206691439b2dcb2fc05adc13cc7f5b6e75a08fce8f75ee188adc7751"
-url = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.33_10.tar.gz"
+checksum = "sha256:8e77a0b5f92b261a81d4a91ecb543f683425d6ffd97e254e39f842eb32aff190"
+url = "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.33.1_1.tar.gz"
 
 [[tools.maven]]
 version = "3.9.16"
